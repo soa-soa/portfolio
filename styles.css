@@ -9,5 +9,40 @@ nav img {
     display: block;
     max-width: 100%;
     height: auto;
+
 }
 
+nav ul, nav ol {
+    /* removes bulletpoints */
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #0e1e61;
+}
+
+a:hover {
+    background-color: #95c0ff;
+    color: #FFFFE8;
+}
+
+body {
+    margin: 3em;
+}
+
+ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+ul li a {
+    padding: 1em;
+}
+
+.container {
+  display: grid;
+  /* 2 columns, overflow creates another row */
+  grid-template-columns: 1fr 1fr; 
+  gap: 1em;
+}
