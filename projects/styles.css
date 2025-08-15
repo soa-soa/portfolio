@@ -4,7 +4,11 @@ h1, h2, h3, p, ul, ol {
     padding: 0;
 }
 
-nav img {
+header {
+    padding-bottom: 1em;
+}
+
+img {
     /* sets images as block elements and makes sure they don't bust out of their containers, and that they maintain their aspect ratio. */
     display: block;
     max-width: 100%;
@@ -12,7 +16,7 @@ nav img {
 
 }
 
-nav ul, nav ol {
+ul, ol {
     /* removes bulletpoints */
     list-style-type: none;
 }
@@ -29,6 +33,7 @@ a:hover {
 
 body {
     margin: 3em;
+    font-family: 'Atkinson Hyperlegible Next';
 }
 
 ul {
@@ -37,12 +42,43 @@ ul {
 }
 
 ul li a {
-    padding: 1em;
+    margin: 1em;
 }
 
-.container {
-  display: grid;
-  /* 2 columns, overflow creates another row */
-  grid-template-columns: 1fr 1fr; 
-  gap: 1em;
+
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (min-width:320px)  {  
+    .container {
+    display: grid;
+    /* 1 columns, overflow creates another row */
+    grid-template-columns: 1fr; 
+    gap: 1em;
+    }
+}
+
+/* smartphones, Android phones, landscape iPhone */ 
+@media (min-width:480px)  { 
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+@media (min-width:600px)  { 
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+@media (min-width:801px)  { 
+}
+
+/* big landscape tablets, laptops, and desktops */ 
+@media (min-width:1025px) { 
+    .container {
+    display: grid;
+    /* 2 columns, overflow creates another row */
+    grid-template-columns: 1fr 1fr; 
+    gap: 1em;
+    }
+}
+
+/* hi-res laptops and desktops */ 
+@media (min-width:1281px) { 
 }

@@ -4,7 +4,11 @@ h1, h2, h3, p, ul, ol {
     padding: 0;
 }
 
-nav img {
+header {
+    padding-bottom: 1em;
+}
+
+img {
     /* sets images as block elements and makes sure they don't bust out of their containers, and that they maintain their aspect ratio. */
     display: block;
     max-width: 100%;
@@ -12,7 +16,7 @@ nav img {
 
 }
 
-nav ul, nav ol {
+ul, ol {
     /* removes bulletpoints */
     list-style-type: none;
 }
@@ -29,6 +33,7 @@ a:hover {
 
 body {
     margin: 3em;
+    font-family: 'Atkinson Hyperlegible Next';
 }
 
 ul {
